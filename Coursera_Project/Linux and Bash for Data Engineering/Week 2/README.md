@@ -142,4 +142,9 @@ File: new_fruit.txt
 
 <!--c. standard error-->
 <!--create error-->
-ls -l /var/FAKEDIR
+>>ls -l /var/FAKEDIR 2
+>>ls -l /var/FAKEDIR 2>error.txt
+<!--append-->
+>>ls -l /var/FAKEDIR 2>>error.txt
+<!--Throw error away-->
+>>ls -l /var/FAKEDIR 2>>/dev/null
